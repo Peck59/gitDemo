@@ -12,6 +12,7 @@
             padding: 10px;
             font-weight: bolder;
             font-size: 50px;
+            
         }
         body{
             margin: 0px;
@@ -36,21 +37,97 @@
             color: red;
             cursor: pointer;
         }
+        div.subHead2{
+            background-color: black;
+            margin-top:  10px;
+            height: 240px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            
+            
+        }
+        label[for="enterText"]{
+            color: red;
+            font-weight: bolder;
+            margin-right: 10px;
+        }
+        input[type="text"]{
+            border: navy;
+            height: 20px;
+            border-radius: 5px;
+            background-color: darkgreen;
+            color: white;
+            padding: 3px;
+        }
+        input[type="text"]:hover{
+            background-color: rgb(8, 145, 8);
+        }
+
+        div.buttonCustom{
+           
+        }
+
+        div.forForm{
+            margin-bottom: 20px;
+        }
+        button.buttonClass{
+            background-color:rgb(6, 6, 153);
+            width: 80px;
+            height: 30px;
+            border: navajowhite;
+            border-radius: 5px;
+            color: white;
+            font-weight: bolder;
+
+        }
+        button.buttonClass:hover{
+            background-color: blue
+        }
+        div.displayBlock{
+            
+            height: 100px;
+            background-color: rgb(223, 187, 30);
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 20px;
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        div.displayBlock:hover{
+            background-color: yellow;
+        }
     </style>
+    
 </head>
 <body>
     <div class="head">
         Git Version Control
     </div>
-    
     <br>
     <div class="subHead">
         <script src="ifElse.js"></script>
     </div>
-    <div>
-        <script src="addThingsToObject.js"></script>
+    
+    <div class="subHead2">
+        <div class="forForm">
+            <label for="enterText">Enter Text</label>
+            <input type="text" id="exportInput" value="Test a text from input">
+        </div>
+
+        <div class="buttonCustom">
+            <button id="acceptEvent" class="buttonClass">Display</button>
+
+        </div>
+        <div class="displayBlock" id="displayID">Waiting</div>
+
+        <script src="addEvent.js"></script>
+
     </div>
-    
-    
+
 </body>
 </html>
